@@ -87,16 +87,3 @@ final class App: Identifiable, ObservableObject {
         self.isInjected = InjectorV3.main.checkIsInjectedAppBundle(url)
     }
 }
-
-extension App {
-    static let advertisementApp: App = {
-        [
-            App(
-              
-            ),
-            App(
-               
-            ),
-        ].randomElement()!
-    }()
-}
